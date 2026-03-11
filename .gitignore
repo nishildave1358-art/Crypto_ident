@@ -1,0 +1,42 @@
+# Professional ZK Implementation Ignore List
+
+# Dependencies
+node_modules/
+frontend/node_modules/
+
+# Environment & Secrets
+.env
+frontend/.env
+.env.local
+*.pem
+*.key
+
+# Hardhat & Compilation
+artifacts/
+cache/
+typechain/
+typechain-types/
+
+# ZK Proof Artifacts (Oversized for Git)
+keys/
+*.ptau
+# *.zkey   <-- Note: We include .zkey in the README as manual downloads or specific builds
+*.r1cs
+*.sym
+# *.wasm   <-- Small enough to keep for demo reliability
+
+# Build Outputs
+frontend/dist/
+build/
+
+# IDE & Logs
+.vscode/
+.idea/
+.DS_Store
+*.log
+npm-debug.log*
+
+# Agent Artifacts (Development Only)
+.agent/
+.gemini/
+ bitumen
